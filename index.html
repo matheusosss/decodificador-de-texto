@@ -3,15 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Decodificador</title>
 </head>
 <body>
     <header>
-
+        <img class="logoalura" src="/assets/logoalura.png" alt="logo Alura">
     </header>
-<img src="imagens/Frame 6.png">
-<footer>
 
-</footer>
+    <main>
+        <section>
+            <textarea class="text-area" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+    
+            <div class="informacao">
+                <h6>Apenas letras minúsculas e sem acento</h6>
+            </div>
+    
+            <div class="botoes">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+    
+        <section>
+            <textarea class="mensagem" cols="20" rows="10"></textarea>
+            <button class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <script src="app.js"></script>
+
+
 </body>
 </html>
